@@ -1,8 +1,8 @@
-ASTR496: Fundamentals of Data Science at UIUC Astronomy, Fall 2025
+ASTR496: Foundations of Data Science at UIUC Astronomy, Fall 2025
 
 Gautham Narayan, UIUC
 
-TR, 1400-1520
+TR, 1230-1350
 
 Instructions
 
