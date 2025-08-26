@@ -1,0 +1,14 @@
+If you have an existing `conda` or `mamba` installation, skip to Step 3.
+
+1. Begin by installing Miniforge for your operating system from here: https://github.com/conda-forge/miniforge?tab=readme-ov-file (SCROLL DOWN TO THE INSTALL SECTION ON GITHUB)
+
+
+2. If this is your first time installing `conda`, open a terminal (you should have taken ASTR310, so I'm going to assume you know how to do this), and run:
+> conda init
+
+3. Run the following commands in sequence
+> mamba create -n astr496
+> mamba activate astr496
+> mamba install python=3 numpy scipy astropy jupyter matplotlib scikit-learn pandas
+
+This will prompt you to install several other packages. Hit yes. 
