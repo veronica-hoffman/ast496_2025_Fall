@@ -207,4 +207,6 @@ marimo/_lsp/
 __marimo__/
 
 # Keynote
-.key
+*.key
+.DS_Store
+lecture_prep/
