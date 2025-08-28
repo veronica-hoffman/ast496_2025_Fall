@@ -9,6 +9,6 @@ If you have an existing `conda` or `conda` installation, skip to Step 3.
 3. Run the following commands in sequence
 > conda create -n astr496
 > conda activate astr496
-> conda install python=3 numpy scipy astropy jupyter matplotlib scikit-learn pandas
+> conda install python=3 numpy scipy astropy jupyter matplotlib scikit-learn pandas ipympl nb_conda_kernels
 
 This will prompt you to install several other packages. Hit yes. 
