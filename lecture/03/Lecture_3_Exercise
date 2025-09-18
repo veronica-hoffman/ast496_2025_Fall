@@ -1,0 +1,37 @@
+#%%
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+
+#%%
+df = pd.read_csv('ast496_2025_fall/lecture/03/sample_stats.csv')
+print(df)
+
+meanArray = []
+for i in range(np.max(df['idx'])):
+    meanX = np.mean(df[df['idx'] == i]['x'])
+    meanY = np.mean(df[df['idx'] == i]['y'])
+    stdX = np.std(df[df['idx'] == i]['x'])
+    stdY = np.std(df[df['idx'] == i]['y'])
+    print('X', i, 'Mean:', meanX, 'STD:', stdX, 'Y', i, 'Mean:', meanY, 'STD:', stdY)
+    plt.scatter(df[df['idx'] == i]['x'], df[df['idx'] == i]['y'])
+    plt.show()
+    
+#%%
+import scipy
+import statsmodels.api
+cauchy = scipy.stats.cauchy.rvs(size = 1000)
+statsmodels.api.qqplot(cauchy)
+plt.title('Cauchy Plot')
+uniform = scipy.stats.uniform.rvs(size = 1000)
+statsmodels.api.qqplot(uniform)
+plt.title('Uniform Plot')
+normal = scipy.stats.norm.rvs(size = 1000)
+statsmodels.api.qqplot(normal)
+plt.title('Normal plot')
+
+norm1 = scipy.stats.norm.rvs(loc = 5, size = 1000)
+norm2 = scipy.stats.norm.rvs(loc = 2, size = 1000)
+doubleNorm = np.concatenate((norm1, norm2))
+statsmodels.api.qqplot(doubleNorm)
+plt.title('Norm conc.')
