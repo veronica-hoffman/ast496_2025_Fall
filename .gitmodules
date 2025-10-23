@@ -1,0 +1,3 @@
+[submodule "lecture/09/Gaussian-Process-Regression-Tutorial"]
+	path = lecture/09/Gaussian-Process-Regression-Tutorial
+	url = https://github.com/jwangjie/Gaussian-Process-Regression-Tutorial
